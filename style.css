@@ -1,0 +1,292 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
+
+:root{
+    --color-primario: #183D3D; 
+    --color-secundario: #9EC8B9;
+    --color-terceario: aqua;
+    --color-cla: #d7d8db;
+    --color-tex: #343A40;
+    --color-tex-chi: #495057;
+    --fuente-inter: 'Inter', sans serif;
+}
+
+*{
+    padding: 1% 0% 0% 0%;
+    margin: 8;
+}
+
+body{
+    background-color:var(--color-primario);
+    color: var(--color-terceario);
+    box-sizing: border-box;
+}
+
+.header__menu__logo{
+    filter:drop-shadow(4px 7px 4px var(--color-terceario));
+    margin: 12% 1% 2% 2%;
+}
+.presentacion1{
+    display: flex;
+    align-items: center;
+    padding: 0% 10%;
+    justify-content: space-between;
+    gap: 0%;
+}
+
+.presentacion__contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 310px;
+    width: 70%;
+}
+    
+.presentacion__titulo{
+    width: 70%;
+    font-size: 2rem;
+    font-family: var(--fuente-inter);
+    cursor: pointer;
+    filter:drop-shadow(5px 7px 5px var(--color-terceario));
+    text-shadow: 1px 2px #4e4c63;
+    margin: 5%;
+}
+.presentacion__boton__mensaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0px;
+    align-items: flex-start;
+    margin: 4%;
+    align-self: center;
+}
+.icono__mensaje{
+    font-family: var(--fuente-inter);
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+.presentacion__botones{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px 0;
+    gap: 24px; /*espacio entre los botones de enlaces*/
+    align-self: center;
+}
+.container__boton__en{
+    width: 328px;
+    text-align: center;
+    padding: 24px 0; /*sirvio para que el boton sea mas grande
+    y de esta manera no apriete las letras*/
+    border-radius: 24px;
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    font-weight: 280px;
+    text-decoration: none;
+    color:var(--color-cla);
+    border: 1px solid var(--color-terceario);;
+    display: flex;
+    justify-content: center;
+    gap: 24px;  /*para que separe*/
+    background-color: var(--color-tex);
+    border-bottom: 4px groove;
+    border-bottom-style: groove;
+    cursor: pointer;
+}
+
+.container__boton__de{
+    width: 328px;
+    text-align: center;
+    padding: 21.5px 0; /*sirvio para que el boton sea mas grande
+    y de esta manera no apriete las letras*/
+    border-radius: 24px;
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    font-weight: 280px;
+    text-decoration: none;
+    color:var(--color-tex);
+    border: 1px solid var(--color-terceario);;
+    display: flex;
+    justify-content: center;
+    gap: 24px;  /*para que separe*/
+    background-color: var(--color-secundario);
+    border-bottom: 4px groove;
+    border-bottom-style: groove;
+    cursor: pointer;
+}
+.container__boton__copiar:hover {
+    text-shadow: 5px 4px 3px #00406b;
+    font-size: 1.75rem;
+    text-shadow: 1px 2px rgb(78, 76, 99);
+}
+.container__boton__de:hover{
+    text-shadow: 5px 4px 3px #00406b;
+    font-size: 1.75rem;
+    text-shadow: 1px 2px rgb(78, 76, 99);
+}
+.container__boton__en:hover{
+    text-shadow: 5px 4px 3px #c5c7e2;
+    font-size: 1.75rem;
+    text-shadow: 1px 2px rgb(78, 76, 99);
+} 
+.muñeco_texto{
+    background-color: var(--color-cla);
+    border-radius: 32px;
+    border: 4px outset;
+    padding: 25% 2% 25% 2%;
+    margin: -110px -15px 0 40px;    
+    height: 100px;
+    width: 30%;
+    align-items: center;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+.presentacion__contenido__titulo{
+    font-size: 1.5rem;
+    font-family: var(--fuente-inter);
+    color:var(--color-tex);
+    text-align:center;
+    display: flex;
+    justify-content:flex-start;
+    gap: 24px; /*para que separe*/
+}
+.presentacion__contenido__texto{
+    font-size: 1rem;
+    font-family: var(--fuente-inter);
+    color:var(--color-tex-chi);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 24px; /*para que separe*/
+}
+.presentacion2{
+    padding: 0% 1%;
+}
+.presentacion__contenido2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5%;
+    justify-content: space-between;
+    gap: 0%;
+}
+
+.presentacion__informaciones2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 6%;
+    align-self:flex-start;
+}
+
+.container{
+    background-color: var(--color-primario);
+    border: 0px outset;
+    border-radius: 32px;
+    width: 70%; /* Ancho que representa el 30% del contenedor padre o de la página */
+    max-width: 750px; /* Ancho máximo de 400px */
+    height: 750px; /* Altura fija de 944px */
+    position: relative;
+    top: 40px; /* Posicionado a 40px desde la parte superior */
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que el contenido esté arriba y el botón abajo */
+    box-sizing: border-box;
+    margin: -110px -15px 0 40px;  
+}
+
+.container__input{
+   
+    font-family: var(--fuente-inter);
+    font-size: 1.5rem;
+    color: var(--color-cla);
+    background-color: var(--color-primario);
+    border: 0px;
+    border-radius: 32px;
+    padding: 10px;
+    height: auto; /* Deja que el contenido determine la altura */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible dentro de la clase respuesta */
+    box-sizing: border-box;
+    align-self: flex-start; /* Posiciona el contenido al inicio del contenedor */
+    align-items: flex-start;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-wrap: break-word; /* Permitir que las palabras se corten si es necesario */
+    word-wrap: break-word; /* Soporte adicional para navegadores más antiguos */
+    word-break: break-word; /* Quebrar las palabras largas */
+}
+.respuesta {
+    background-color: var(--color-cla);
+    border: 4px outset;
+    border-radius: 32px;
+    width: 70%; /* Ancho que representa el 30% del contenedor padre o de la página */
+    max-width: 400px; /* Ancho máximo de 400px */
+    height: 700px; /* Altura fija de 944px */
+    position: relative;
+    top: 40px; /* Posicionado a 40px desde la parte superior */
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que el contenido esté arriba y el botón abajo */
+    box-sizing: border-box;
+    margin: -110px -15px 0 40px;  
+     
+}
+.respuesta__contenido {
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    color: var(--color-secundario);
+    border: 1px outset;
+    border-radius: 32px;
+    padding: 10px;
+    height: auto; /* Deja que el contenido determine la altura */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible dentro de la clase respuesta */
+    box-sizing: border-box;
+    align-self: flex-start; /* Posiciona el contenido al inicio del contenedor */
+    width: 90%;
+    align-items: flex-start;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-wrap: break-word; /* Permitir que las palabras se corten si es necesario */
+    word-wrap: break-word; /* Soporte adicional para navegadores más antiguos */
+    word-break: break-word; /* Quebrar las palabras largas */
+}
+
+.container__boton__copiar {
+    width: 100%; /* Asegura que el botón ocupe el 100% del ancho del contenedor */
+    max-width: 328px; /* Limitar el ancho máximo a 328px */
+    text-align: center;
+    padding: 24px 0;
+    border-radius: 24px;
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    font-weight: 280;
+    text-decoration: none;
+    color: var(--color-tex);
+    border: 1px solid var(--color-terceario);
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    background-color: var(--color-cla);
+    border-bottom: 4px groove;
+    cursor: pointer;
+    align-self: center; /* Posiciona el botón en el centro horizontal de la parte inferior */
+}
+.footer{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    text-align: center;
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    margin: 0%;
+}

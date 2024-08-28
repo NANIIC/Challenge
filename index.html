@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="icon" href="./img/pc.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <a class="header__menu__logo" href="index.html"><img src="./img/Logo.png"></a>
+
+        </nav>
+    </header>
+    <!--Visible inicial-->
+    <main class="presentacion1" id="presentacion1">
+        <section class="presentacion__contenido">
+            <h1 class="presentacion__titulo" href="javascript:void(0);" 
+            onclick="mostrarIngreso()">
+                Ingresa tu texto aquí.
+            </h1>
+            <div class="presentacion__boton__mensaje">
+                <p1 class="icono__mensaje"><img class="mensaje_imagen" src="./img/icons4.png"alt="icono de aviso">Sólo letra minúscula, sin acento.</p1> 
+                 
+                <div class="presentacion__botones">
+                    <button onclick="mostrarIngreso();" class="container__boton__en">Encriptar</button>
+                    <button onclick="mostrarIngreso();" class="container__boton__de">Desencriptar</button>
+                </div>
+            </div>  
+        </section>    
+      
+        <div class="muñeco_texto">
+            <img class="presentacion__nene" src="./img/Muñeco.png" alt="el nene">
+            <h1 class="presentacion__contenido__titulo">Ningún mensaje fue encontrado</h1>
+            <p1 class="presentacion__contenido__texto">Ingresa el texto que deseas encriptar o desencriptar</p1>
+        </div>
+    </main>
+    <!--Oculta hasta ingreso del text-->
+    <main class="presentacion2" id="ingresoTexto" style="display: none;">
+        <section class="presentacion__contenido2">
+           <div class="presentacion__informaciones2">
+               <div class="container">
+                    <form id="formulario">
+                        <label for="textoUsuario"></label><br><br>
+                        <input type="textarea" id="textoUsuario" class="container__input" placeholder="Ingrese texto aquí"><br>
+                    </form>
+                    <div class="presentacion__boton__mensaje">
+                        <p1 class="icono__mensaje"><img class="mensaje_imagen" src="./img/icons4.png"alt="icono de aviso">
+                            Sólo letra minúscula, sin acento.
+                        </p1> 
+                        
+                        <div class="presentacion__botones">
+                            <button onclick="convertirTexto();" class="container__boton__en">Encriptar</button>
+                            <!-- Botón para desencriptar -->
+                            <button onclick="desencriptarTexto();" class="container__boton__de">Desencriptar</button>
+                        </div>
+                    </div> 
+                </div>    
+            </div>
+
+            <div class="respuesta">
+                    
+                <p id="textoConvertido" class="respuesta__contenido"></p>
+                <!-- Botón para copiar el texto convertido -->
+                <button onclick="copiarTexto();" class="container__boton__copiar">Copiar</button>
+            
+            </div>
+        </section>
+    </main>
+    <script src="app.js" defer></script>
+    <footer class="footer">
+        <img src="./img/gafas.png"alt="icono de gafas">
+        <p>Desarrollado por Anahí ☺ 2024</p>
+       <a class="el_lnk" href="https://www.linkedin.com/in/luna-calderon-ab2634212/">
+        <img src="./img/linkedin.png"></a> 
+    </footer>
+
+</body>
+</html>
